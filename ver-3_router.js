@@ -1,3 +1,9 @@
+
+/* 
+API use array as database
+
+*/
+
 var express = require('express');
 
 // Для того чтобы использовать POST надо парсить BODY, для этого нужна эта библиотека
@@ -31,19 +37,13 @@ app.get('/', function (req, res) {
     res.send('Hello API');
   });
 
-  // Так подключают движок PUG
-  app.engine('pug', require('pug').__express);
 
- // Теперь нам нужно настроить сервер, чтобы он был запущен на определенном порту. Для этого добавим
-
-
-
-// Добавим Роут для артистов
+// GET - Добавим Роут для артистов
 app.get('/artists', function (req, res) {
     res.send(artists);
   });
 
-  // Добавим Роут для артистов с каким-то параметром
+  // GET - Добавим Роут для артистов с каким-то параметром
   app.get('/artists/:id', function (req, res) {
       // ищем артиста по id
     var artist = artists.find(function (artist) {
