@@ -1,5 +1,6 @@
 # express
-Simple API, MongoDB, Model & Controller
+Simple API with Model & Controller
+Express, MongoDB
 
 RUN node install
 
