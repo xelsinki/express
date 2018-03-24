@@ -1,7 +1,8 @@
 # express
-Simple API, MongoDB, 
+Simple API, MongoDB, Model & Controller
 
 RUN node install
+
 RUN node server.js
 
 API routes:
